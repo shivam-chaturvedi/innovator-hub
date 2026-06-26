@@ -13,6 +13,9 @@ import ProgramsPage from "./pages/ProgramsPage.tsx";
 import ImpactPage from "./pages/ImpactPage.tsx";
 import TeamPage from "./pages/TeamPage.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import ChapterDetailPage from "./pages/ChapterDetailPage.tsx";
+import ChaptersAdminPage from "./pages/ChaptersAdminPage.tsx";
+import ChapterAdminEditPage from "./pages/ChapterAdminEditPage.tsx";
 import ScrollToTop from "@/components/ScrollToTop";
 import GoogleTranslate from "@/components/GoogleTranslate";
 
@@ -36,6 +39,9 @@ const App = () => (
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/lessons" element={<LessonsPage />} />
           <Route path="/chapters" element={<ChaptersPage />} />
+          <Route path="/chapters/:id" element={<ChapterDetailPage />} />
+          <Route path="/admin/chapters" element={<ChaptersAdminPage />} />
+          <Route path="/admin/chapters/:id" element={<ChapterAdminEditPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
