@@ -16,6 +16,8 @@ import NotFound from "./pages/NotFound.tsx";
 import ChapterDetailPage from "./pages/ChapterDetailPage.tsx";
 import ChaptersAdminPage from "./pages/ChaptersAdminPage.tsx";
 import ChapterAdminEditPage from "./pages/ChapterAdminEditPage.tsx";
+import PartnersPage from "./pages/PartnersPage.tsx";
+import ProjectsPage from "./pages/ProjectsPage.tsx";
 import ScrollToTop from "@/components/ScrollToTop";
 import GoogleTranslate from "@/components/GoogleTranslate";
 
@@ -40,6 +42,8 @@ const App = () => (
           <Route path="/lessons" element={<LessonsPage />} />
           <Route path="/chapters" element={<ChaptersPage />} />
           <Route path="/chapters/:id" element={<ChapterDetailPage />} />
+          <Route path="/community/partners" element={<PartnersPage />} />
+          <Route path="/community/projects" element={<ProjectsPage />} />
           <Route path="/admin/chapters" element={<ChaptersAdminPage />} />
           <Route path="/admin/chapters/:id" element={<ChapterAdminEditPage />} />
           <Route path="*" element={<NotFound />} />

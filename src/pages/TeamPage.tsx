@@ -3,7 +3,19 @@ import PageLayout from "@/components/PageLayout";
 import aravImg from "@/assets/arav-portrait-real.png";
 import kaavyaImg from "@/assets/kaavya-portrait-real.png";
 
-const members = [
+import vedImg from "@/assets/ved-portrait.jpg";
+import virImg from "@/assets/vir-portrait.jpg";
+
+interface Member {
+  name: string;
+  role: string;
+  image?: string;
+  bio: string;
+  linkedin?: string;
+  instagram?: string;
+}
+
+const members: Member[] = [
   {
     name: "Arav Kaul",
     role: "Founder",
@@ -19,6 +31,18 @@ const members = [
     bio: "Hi, I'm Kaavya Majumder, a student from Mumbai who believes that while talent exists everywhere, opportunity does not — and education has the power to bridge that gap. My interest in technology, robotics, and coding comes from a simple conviction: learning should go beyond textbooks and enable students to solve real problems in their own environments. Through hands-on STEM education, I aim to make problem-solving accessible, creative, and empowering, especially for students in underserved communities across India.",
     linkedin: "https://www.linkedin.com/in/kaavya-majumder/",
     instagram: "https://www.instagram.com/kaavya.majumder",
+  },
+  {
+    name: "Ved Hariharan",
+    role: "Chapter Head, Mumbai",
+    image: vedImg,
+    bio: "Hi, I'm Ved Hariharan, a student from Mumbai who believes that the best way to learn something is to build it. For many students, especially in underserved and rural communities, education rarely goes beyond memorisation. They never get the chance to experiment, fail, iterate, and figure things out for themselves. That hands-on process is where real confidence comes from. What draws me to Project Zūl is the opportunity to give students that experience, so they leave not just knowing more, but trusting themselves more.",
+  },
+  {
+    name: "Vir Hariharan",
+    role: "Chapter Head, Mumbai",
+    image: virImg,
+    bio: "Hi, I'm Vir Hariharan, a student from Mumbai who believes the most important thing we can help young people realize is that they can create, not just consume. Every day, students interact with a world built by someone else. But everything around us was made by people no different from them, and once students truly grasp that, something shifts. That realization is what draws me to Project Zūl. My goal is for students to leave not just with new skills, but with the confidence to see themselves as builders, people capable of improving and contributing to the world around them.",
   },
 ];
 
@@ -49,22 +73,36 @@ const TeamPage = () => (
               transition={{ duration: 0.5, delay: i * 0.15 }}
             >
               <div className="flex flex-col md:flex-row gap-8 items-start">
-                <img
-                  src={m.image}
-                  alt={m.name}
-                  className="w-28 h-28 object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                  loading="lazy"
-                  width={341}
-                  height={341}
-                />
+                {m.image ? (
+                  <img
+                    src={m.image}
+                    alt={m.name}
+                    className="w-28 h-28 object-cover object-top grayscale hover:grayscale-0 transition-all duration-500 shrink-0"
+                    loading="lazy"
+                    width={341}
+                    height={341}
+                  />
+                ) : (
+                  <div className="w-28 h-28 shrink-0 bg-primary/10 border border-border flex items-center justify-center">
+                    <span className="font-heading font-bold text-2xl text-primary">
+                      {m.name.split(" ").map((n) => n[0]).join("")}
+                    </span>
+                  </div>
+                )}
                 <div>
                   <h3 className="font-heading font-bold text-xl mb-1">{m.name}</h3>
                   <p className="text-primary text-xs uppercase tracking-[0.2em] font-semibold mb-4">{m.role}</p>
                   <p className="text-muted-foreground text-sm leading-relaxed max-w-xl mb-4">{m.bio}</p>
-                  <div className="flex gap-4">
-                    <a href={m.linkedin} target="_blank" rel="noopener noreferrer" className="text-primary text-xs uppercase tracking-wider font-semibold hover:text-foreground transition-colors">LinkedIn</a>
-                    <a href={m.instagram} target="_blank" rel="noopener noreferrer" className="text-primary text-xs uppercase tracking-wider font-semibold hover:text-foreground transition-colors">Instagram</a>
-                  </div>
+                  {(m.linkedin || m.instagram) && (
+                    <div className="flex gap-4">
+                      {m.linkedin && (
+                        <a href={m.linkedin} target="_blank" rel="noopener noreferrer" className="text-primary text-xs uppercase tracking-wider font-semibold hover:text-foreground transition-colors">LinkedIn</a>
+                      )}
+                      {m.instagram && (
+                        <a href={m.instagram} target="_blank" rel="noopener noreferrer" className="text-primary text-xs uppercase tracking-wider font-semibold hover:text-foreground transition-colors">Instagram</a>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>
