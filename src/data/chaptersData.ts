@@ -1,3 +1,6 @@
+import vedPortrait from "@/assets/ved-portrait.jpg";
+import virPortrait from "@/assets/vir-portrait.jpg";
+
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 export interface GalleryImageItem {
@@ -47,6 +50,7 @@ export interface ChapterData {
   tagline: string;
   description: string[];
   lead: ChapterLead | null;
+  leads?: ChapterLead[];
   stats: { label: string; value: string }[];
   featuredVideo: ChapterVideo;
   videoRow1: { sectionTitle: string; videos: ChapterVideo[] };
@@ -260,6 +264,85 @@ export const defaultChapters: ChapterData[] = [
       videoRow2: true,
       gallery: true,
       awards: true,
+    },
+  },
+
+  // ── Mumbai ───────────────────────────────────────────────────────────────────
+  {
+    id: "mumbai",
+    name: "Mumbai",
+    region: "Maharashtra",
+    tagline: "Empowering Mumbai's next generation to build, not just consume",
+    description: [
+      "The Mumbai chapter of Project Zūl is expanding the initiative's reach into one of India's most dynamic cities. Led by two student innovators with deep roots in STEM and leadership, the chapter focuses on bridging the gap between access and opportunity — ensuring that students across Mumbai can experience hands-on robotics education.",
+      "Through Arduino-based workshops, collaborative projects, and community engagement, the Mumbai chapter gives students the tools and mindset to move from passive learners to active creators. Every workshop is designed to be practical, collaborative, and tied to real challenges students see in their own communities.",
+      "The chapter aspires to build a self-sustaining ecosystem of student innovators who mentor each other and inspire the next wave of change-makers in Maharashtra.",
+    ],
+    lead: null,
+    leads: [
+      {
+        name: "Ved Hariharan",
+        title: "Chapter Lead",
+        bio: [
+          "Ved is a student from Mumbai with a strong interest in mathematics, technology, and problem-solving. He enjoys exploring how logical thinking and innovation can be applied to tackle real-world challenges, from competitive mathematics and computer science to community-driven initiatives.",
+          "He looks for ways in which technology can be used to create practical and meaningful impact. He also enjoys sharing knowledge with others and helping students discover new ways to learn, think critically, and approach problems creatively. Alongside his passion for STEM, he is also deeply involved in leadership activities such as Student Council and collaborative student projects.",
+          "Through Project Zūl, Ved hopes to encourage students to think creatively, work collaboratively, and view learning as a way to build solutions that can positively influence their communities and the future.",
+        ],
+        image: vedPortrait,
+      },
+      {
+        name: "Vir Hariharan",
+        title: "Chapter Lead",
+        bio: [
+          "Vir is a student from Mumbai whose interests lie at the intersection of robotics, mathematics, technology, and social impact. He is driven by a curiosity for how ideas evolve into practical solutions and how innovation can empower people far beyond classrooms and competitions.",
+          "He enjoys not only the engineering side of things, but is equally passionate about making STEM education more engaging and accessible for students from different backgrounds. Vir believes that technology is most powerful when it inspires people to think independently and enables them to build solutions that improve the world around them.",
+          "As part of Project Zūl, Vir hopes to encourage students to move from being passive consumers of technology to active creators — seeing robotics not simply as machines and coding, but as a platform for imagination, leadership, and meaningful change.",
+        ],
+        image: virPortrait,
+      },
+    ],
+    stats: [
+      { label: "Students", value: "200+" },
+      { label: "Schools", value: "3" },
+      { label: "Workshops", value: "10+" },
+      { label: "Chapter Leads", value: "2" },
+    ],
+    featuredVideo: {
+      id: "mv-featured",
+      title: "Chapter Story — Mumbai",
+      description: "How two student innovators are bringing hands-on robotics education to Mumbai's classrooms.",
+      src: "",
+      duration: "3:30",
+    },
+    videoRow1: {
+      sectionTitle: "Impact Reels",
+      videos: [
+        { id: "mv1", title: "First Workshop", description: "Launching hands-on Arduino sessions in Mumbai schools.", src: "", duration: "1:30" },
+        { id: "mv2", title: "Sensor Projects", description: "Students building light and temperature sensors.", src: "", duration: "2:00" },
+        { id: "mv3", title: "Student Showcase", description: "Mumbai students present their first robotics projects.", src: "", duration: "1:45" },
+        { id: "mv4", title: "Coding Basics", description: "Introducing programming fundamentals through Arduino.", src: "", duration: "2:15" },
+      ],
+    },
+    videoRow2: {
+      sectionTitle: "Community Stories",
+      videos: [
+        { id: "mv5", title: "School Partners", description: "Schools sharing their experience with the program.", src: "", duration: "1:50" },
+        { id: "mv6", title: "Teacher Voices", description: "Educators reflect on the impact of hands-on learning.", src: "", duration: "2:00" },
+        { id: "mv7", title: "Future Builders", description: "Students share their goals after joining Project Zūl.", src: "", duration: "1:35" },
+      ],
+    },
+    gallery: {
+      sectionTitle: "Field Notes from Mumbai",
+      images: [],
+    },
+    awards: [],
+    sections: {
+      about: true,
+      chapterStory: true,
+      videoRow1: true,
+      videoRow2: true,
+      gallery: true,
+      awards: false,
     },
   },
 ];

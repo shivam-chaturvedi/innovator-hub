@@ -148,35 +148,65 @@ const ChapterDetailPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="grid md:grid-cols-[1fr_auto] gap-8 items-start"
             >
-              <div className="space-y-4 text-muted-foreground max-w-3xl">
-                {chapter.description.map((para, i) => (
-                  <p key={i}>{para}</p>
-                ))}
-              </div>
+              {/* Description + optional single-lead sidebar */}
+              <div className={`grid gap-8 items-start${chapter.lead && !chapter.leads ? " md:grid-cols-[1fr_auto]" : ""}`}>
+                <div className="space-y-4 text-muted-foreground max-w-3xl">
+                  {chapter.description.map((para, i) => (
+                    <p key={i}>{para}</p>
+                  ))}
+                </div>
 
-              {/* Chapter lead */}
-              {chapter.lead && (
-                <div className="flex flex-col md:flex-row gap-5 md:gap-8 items-start border-t md:border-t-0 md:border-l border-border pt-5 md:pt-0 md:pl-8">
-                  {chapter.lead.image && (
-                    <img
-                      src={chapter.lead.image}
-                      alt={chapter.lead.name}
-                      className="w-28 h-28 object-cover rounded-none shadow-lg shrink-0"
-                      loading="lazy"
-                    />
-                  )}
-                  <div className="space-y-2">
-                    <h3 className="font-heading text-lg font-semibold">
-                      Chapter Lead: {chapter.lead.name}
-                    </h3>
-                    <div className="text-muted-foreground text-sm space-y-2">
-                      {chapter.lead.bio.map((para, i) => (
-                        <p key={i}>{para}</p>
-                      ))}
+                {/* Single chapter lead */}
+                {chapter.lead && !chapter.leads && (
+                  <div className="flex flex-col md:flex-row gap-5 md:gap-8 items-start border-t md:border-t-0 md:border-l border-border pt-5 md:pt-0 md:pl-8">
+                    {chapter.lead.image && (
+                      <img
+                        src={chapter.lead.image}
+                        alt={chapter.lead.name}
+                        className="w-28 h-28 object-cover rounded-none shadow-lg shrink-0"
+                        loading="lazy"
+                      />
+                    )}
+                    <div className="space-y-2">
+                      <h3 className="font-heading text-lg font-semibold">
+                        Chapter Lead: {chapter.lead.name}
+                      </h3>
+                      <div className="text-muted-foreground text-sm space-y-2">
+                        {chapter.lead.bio.map((para, i) => (
+                          <p key={i}>{para}</p>
+                        ))}
+                      </div>
                     </div>
                   </div>
+                )}
+              </div>
+
+              {/* Multiple chapter leads — full-width two-column grid below description */}
+              {chapter.leads && chapter.leads.length > 0 && (
+                <div className="mt-8 pt-6 border-t border-border grid md:grid-cols-2 gap-8">
+                  {chapter.leads.map((lead) => (
+                    <div key={lead.name} className="flex flex-col gap-4 items-start">
+                      {lead.image && (
+                        <img
+                          src={lead.image}
+                          alt={lead.name}
+                          className="w-28 h-28 object-cover object-top rounded-none shadow-lg shrink-0 grayscale hover:grayscale-0 transition-all duration-500"
+                          loading="lazy"
+                        />
+                      )}
+                      <div className="space-y-2">
+                        <h3 className="font-heading text-base font-semibold">
+                          Chapter Lead: {lead.name}
+                        </h3>
+                        <div className="text-muted-foreground text-sm space-y-2">
+                          {lead.bio.map((para, i) => (
+                            <p key={i}>{para}</p>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               )}
             </motion.div>
