@@ -125,7 +125,8 @@ export const aravMediaStories: MediaStory[] = [
     logo: deccanHeraldLogo,
     screenshot: deccanHeraldScreenshot,
     title: "Mumbai-based teen brings robotics, coding to J&K students through project 'Zul'",
-    summary: "",
+    summary:
+      "Coverage of the Mumbai teen bringing hands-on robotics and coding to J&K classrooms, framing Project Zūl as the start of a longer push to build a culture of innovation among participating schools.",
     url: "https://www.deccanherald.com/india/mumbai-based-teen-brings-robotics-coding-to-jk-students-through-project-zul-3479104",
     highlight: true,
   },
@@ -134,7 +135,8 @@ export const aravMediaStories: MediaStory[] = [
     logo: telegraphIndiaLogo,
     screenshot: telegraphIndiaScreenshot,
     title: "Mumbai teen’s STEM project, 'Zul' ignites coding spark in Jammu and Kashmir students",
-    summary: "",
+    summary:
+      "Profiles Arav Kaul, an international robotics champion who has competed for India at FIRST, Robotex, and MakeX, on the weekly J&K sessions running circuitry, sensors, coding, and project design from February through April.",
     url: "https://www.telegraphindia.com/india/mumbai-teens-stem-project-zul-ignites-coding-spark-in-jammu-and-kashmir-students/cid/2092554#goog_rewarded",
   },
   {
@@ -142,7 +144,8 @@ export const aravMediaStories: MediaStory[] = [
     logo: greaterKashmirLogo,
     screenshot: greaterKashmirScreenshot,
     title: "Innovation Takes Flight: J&K Students Dive into Robotics with Project Zul",
-    summary: "",
+    summary:
+      "Details how Arav's workshops trained educators across 15 schools and put free Arduino kits in the hands of 1,000+ students, with Lieutenant Governor Manoj Sinha commending the initiative.",
     url: "https://www.greaterkashmir.com/business/innovation-takes-flight-jk-students-dive-into-robotics-with-project-zul/",
   },
   {
@@ -150,7 +153,8 @@ export const aravMediaStories: MediaStory[] = [
     logo: thePrintLogo,
     screenshot: thePrintScreenshot,
     title: "Mumbai-based teen brings robotics, coding to J-K students through project ‘Zul’",
-    summary: "",
+    summary:
+      "Reports on Project Zūl's rollout of weekly teacher-training sessions and Arduino kit distribution across J&K, building toward a student showcase, with Arav quoted on robotics as a tool for creative problem-solving.",
     url: "https://theprint.in/india/mumbai-based-teen-brings-robotics-coding-to-j-k-students-through-project-zul/2578804/",
   },
   {
@@ -158,7 +162,8 @@ export const aravMediaStories: MediaStory[] = [
     logo: kashmirAheadLogo,
     screenshot: kashmirAheadScreenshot,
     title: "Mumbai-based teen brings robotics, coding to J&K students through project Zul",
-    summary: "",
+    summary:
+      "Local coverage of the initiative's reach across 15 schools and 1,000+ students, and Arav's meeting with Lieutenant Governor Manoj Sinha, who praised the programme's alignment with the region's tech ambitions.",
     url: "https://kashmirahead.com/mumbai-based-teen-brings-robotics-coding-to-jk-students-through-project-zul/",
   },
   {
@@ -166,7 +171,8 @@ export const aravMediaStories: MediaStory[] = [
     logo: ptiLogo,
     screenshot: ptiScreenshot,
     title: "Mumbai-based teen brings robotics, coding to J-K students through project 'Zul'",
-    summary: "",
+    summary:
+      "The original wire report on Project Zūl, carried nationally: teachers from 15 government and private schools trained, 1,000+ students equipped with free Arduino kits, and Jammu Sanskriti School's Anupama Sharma noting, \"We require more such initiatives to enhance our technical capabilities.\"",
     url: "https://www.ptinews.com/story/national/mumbai-based-teen-brings-robotics-coding-to-j-k-students-through-project-zul-/2435995",
   },
   {
@@ -174,7 +180,8 @@ export const aravMediaStories: MediaStory[] = [
     logo: risingKashmirLogo,
     screenshot: risingKashmirScreenshot,
     title: "Project Zūl: Teenager Arav Kaul brings global Robotics expertise to J&K students",
-    summary: "",
+    summary:
+      "A regional feature on Arav Kaul bringing his competitive robotics background to J&K classrooms, training teachers and distributing kits so schools can keep the program running independently.",
     url: "https://risingkashmir.com/project-zul-teenager-arav-kaul-brings-global-robotics-expertise-to-jk-students",
   },
   {
@@ -183,7 +190,8 @@ export const aravMediaStories: MediaStory[] = [
     screenshot: amarUjalaScreenshot,
     title:
       "Project Zul: मुंबई के किशोर ने लॉन्च किया 'ज़ुल', रोबोटिक्स और कोडिंग में हाथ आजमाएंगे जम्मू-कश्मीर के छात्र",
-    summary: "",
+    summary:
+      "Hindi-language coverage of the initiative, noting Arav's personal tie to the region through his father and the free Arduino kits reaching students in grades 9 and 10.",
     url: "https://www.amarujala.com/technology/tech-diary/mumbai-teenager-teaches-robotics-and-coding-to-students-of-jammu-and-kashmir-through-zul-project-2025-04-05?pageId=5",
   },
   {
@@ -192,8 +200,16 @@ export const aravMediaStories: MediaStory[] = [
     screenshot: lokmatTimesScreenshot,
     title:
       "Mumbai Based Teen Arav Kaul Launches Project Zul In Jammu And Kashmir To Teach Robotics And Coding To Students.",
-    summary: "",
+    summary:
+      "Reports on the launch of Project Zūl, highlighting Arav's personal connection to Jammu & Kashmir through his father and the teacher-training model behind the initiative's 15-school rollout.",
     url: "https://www.lokmattimes.com/mumbai/mumbai-based-teen-arav-kaul-launches-project-zul-in-jammu-and-kashmir-to-teach-robotics-and-coding-to-students-a510/",
+  },
+  {
+    name: "News Arena India",
+    title: "Mumbai teen's Project Zul brings robotics to J&K classrooms",
+    summary:
+      "Coverage of Arav Kaul's Project Zūl reaching 1,000+ students across 15 J&K schools, with Lieutenant Governor Manoj Sinha's commendation and Arav's quote on robotics as a medium for problem-solving.",
+    url: "https://newsarenaindia.com/states/mumbai-teen-s-project-zul-brings-robotics-to-j-k-classrooms/40622",
   },
 ];
 

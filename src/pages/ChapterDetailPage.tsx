@@ -149,17 +149,17 @@ const ChapterDetailPage = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
             >
-              {/* Description + optional single-lead sidebar */}
-              <div className={`grid gap-8 items-start${chapter.lead && !chapter.leads ? " md:grid-cols-[1fr_auto]" : ""}`}>
-                <div className="space-y-4 text-muted-foreground max-w-3xl">
+              {/* Description + optional single lead, stacked and aligned to the same column */}
+              <div className="space-y-8 max-w-3xl">
+                <div className="space-y-4 text-muted-foreground">
                   {chapter.description.map((para, i) => (
                     <p key={i}>{para}</p>
                   ))}
                 </div>
 
-                {/* Single chapter lead */}
+                {/* Single chapter lead — shown below the story, aligned under the copy */}
                 {chapter.lead && !chapter.leads && (
-                  <div className="flex flex-col md:flex-row gap-5 md:gap-8 items-start border-t md:border-t-0 md:border-l border-border pt-5 md:pt-0 md:pl-8">
+                  <div className="flex flex-col sm:flex-row gap-5 sm:gap-8 items-start border-t border-border pt-6">
                     {chapter.lead.image && (
                       <img
                         src={chapter.lead.image}
@@ -170,7 +170,7 @@ const ChapterDetailPage = () => {
                     )}
                     <div className="space-y-2">
                       <h3 className="font-heading text-lg font-semibold">
-                        Chapter Lead: {chapter.lead.name}
+                        {chapter.lead.title ?? "Chapter Lead"}: {chapter.lead.name}
                       </h3>
                       <div className="text-muted-foreground text-sm space-y-2">
                         {chapter.lead.bio.map((para, i) => (
@@ -197,7 +197,7 @@ const ChapterDetailPage = () => {
                       )}
                       <div className="space-y-2">
                         <h3 className="font-heading text-base font-semibold">
-                          Chapter Lead: {lead.name}
+                          {lead.title ?? "Chapter Lead"}: {lead.name}
                         </h3>
                         <div className="text-muted-foreground text-sm space-y-2">
                           {lead.bio.map((para, i) => (

@@ -1,5 +1,6 @@
 import vedPortrait from "@/assets/ved-portrait.jpg";
 import virPortrait from "@/assets/vir-portrait.jpg";
+import aravPortrait from "@/assets/arav-portrait-real.png";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -210,18 +211,28 @@ export const defaultChapters: ChapterData[] = [
     id: "kashmir",
     name: "Kashmir",
     region: "Jammu & Kashmir",
-    tagline: "The origin story — where Project Zūl began",
+    tagline: "The Founding Chapter",
     description: [
-      "Kashmir is where Project Zūl was born. The original chapter began with a simple question: how do you bring hands-on STEM education to students who have limited access to technology labs and infrastructure?",
-      "Working with local schools across Jammu & Kashmir, Project Zūl developed the Arduino-based curriculum that has since been replicated in chapters across India. Students in Kashmir have built air quality monitors, earthquake early-warning prototypes, and solar energy trackers.",
-      "The program has expanded from a single school pilot to a network of schools in the region, with students serving as peer mentors and leading workshops themselves.",
+      "Project Zūl began where it had to, in the valley my family was forced to leave, and where students like me might have been, had history unfolded differently. Growing up hearing stories of displacement, I became acutely aware of how geography and circumstance determine access. The inequity was not abstract, it was personal.",
+      "That awareness brought me back to Kashmir, not to reclaim what was lost, but to build something in its place. I recognised that students in the region's government schools were capable and curious, yet systematically shut out of the kind of practical, technology-driven education that students in urban centres take for granted. Project Zūl was my attempt to close that distance.",
+      "The J&K chapter introduced hands-on robotics education to government schools across Jammu through Arduino-based workshops designed specifically for low-resource settings. Students engaged with circuits, coding, and applied problem-solving, constructing projects like soil moisture alarms, temperature-sensitive lights, and obstacle-detection systems that addressed real challenges within their own communities.",
+      "The program was built for continuity. Science teachers were trained through low-bandwidth online modules and structured live walkthroughs. Schools received custom robotics kits alongside bilingual lesson plans in Hindi and English, equipping educators to sustain the program independently, well beyond the initial rollout.",
+      "Inclusion remained central to the initiative's design. Approximately 42% of participants were girls, many of whom had previously had no access to technology-based instruction. Internal assessments recorded an average learning gain of 41% in scientific understanding, and over 90% of students successfully completed functional builds on their own.",
+      "To date, the J&K chapter has reached 1,000+ students across 15+ government schools, trained 15+ teachers, and distributed 500+ custom STEM kits, all provided free of cost.",
     ],
-    lead: null,
+    lead: {
+      name: "Arav Kaul",
+      title: "Founder",
+      bio: [
+        "Arav is an incoming Electrical and Computer Engineering freshman at Duke from Mumbai, interested in how computer vision, robotics, and applied machine learning come together to solve real-world problems. His work ranges from building the MPact Glove, a sensor-driven boxing training glove that measures punch force, velocity, and technique in real time to developing Project Pivot, a computer vision app that delivers personalized coaching feedback to boxers without access to formal training, to engineering perception pipelines for India's first biomimetic humanoid robot at Jio Tesseract. At his core, Arav is someone who gets restless until an idea becomes something you can actually hold or use.",
+      ],
+      image: aravPortrait,
+    },
     stats: [
-      { label: "Schools", value: "8" },
-      { label: "Students", value: "500+" },
-      { label: "Teachers Trained", value: "30" },
-      { label: "Years Running", value: "3" },
+      { label: "Students", value: "1,000+" },
+      { label: "Schools", value: "15+" },
+      { label: "Teachers Trained", value: "15+" },
+      { label: "STEM Kits Distributed", value: "500+" },
     ],
     featuredVideo: {
       id: "kv-featured",
@@ -253,9 +264,30 @@ export const defaultChapters: ChapterData[] = [
       images: [],
     },
     awards: [
-      { id: "ka1", title: "National Innovation Award", year: "2024", organization: "NITI Aayog" },
-      { id: "ka2", title: "J&K STEM Excellence", year: "2023", organization: "J&K Govt." },
-      { id: "ka3", title: "Best Youth Initiative", year: "2022", organization: "Project Zūl Foundation" },
+      {
+        id: "ka1",
+        title: "Nominated for the Pradhan Mantri Rashtriya Bal Puraskar (Child Excellence — Social Impact)",
+        organization: "Government of India",
+        year: "2025",
+      },
+      {
+        id: "ka2",
+        title: "Letter of Appreciation for Project Zūl",
+        organization: "Manoj Sinha, Lieutenant Governor of Jammu & Kashmir",
+        year: "2025",
+      },
+      {
+        id: "ka3",
+        title: "Letters of Recommendation for the Bal Puraskar Nomination",
+        organization: "BJP J&K, Leader of Opposition J&K, and MLA (Jammu East), J&K Legislative Assembly",
+        year: "2025",
+      },
+      {
+        id: "ka4",
+        title: "Departmental Endorsement of Project Zūl",
+        organization: "J&K Dept. of School Education, Higher Education, Health & Medical Education",
+        year: "2025",
+      },
     ],
     sections: {
       about: true,
