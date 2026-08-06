@@ -84,7 +84,7 @@ const TestimonialSection = () => {
           ))}
         </div>
 
-        {/* Featured Videos */}
+        {/* Featured Videos 
         <motion.div
           className="mt-10"
           initial={{ opacity: 0, y: 20 }}
@@ -102,6 +102,7 @@ const TestimonialSection = () => {
             ))}
           </div>
         </motion.div>
+        */}
       </div>
 
       <VideoModal video={activeVideo} onClose={() => setActiveVideo(null)} />

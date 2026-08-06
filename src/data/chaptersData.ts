@@ -132,8 +132,8 @@ export const defaultChapters: ChapterData[] = [
       images: [],
     },
     awards: [
-      { id: "ba1", title: "Best Chapter Initiative", year: "2024", organization: "Project Zūl National" },
-      { id: "ba2", title: "Youth STEM Outreach Award", year: "2023", organization: "West Bengal Govt." },
+    //  { id: "ba1", title: "Best Chapter Initiative", year: "2024", organization: "Project Zūl National" },
+    //  { id: "ba2", title: "Youth STEM Outreach Award", year: "2023", organization: "West Bengal Govt." },
     ],
     sections: {
       about: true,

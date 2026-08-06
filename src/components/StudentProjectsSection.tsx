@@ -71,7 +71,7 @@ const StudentProjectsSection = () => {
           These projects encourage students to think about how technology can solve real challenges in their communities.
         </motion.p>
 
-        {/* Featured Videos */}
+        {/* Featured Videos 
         <motion.div
           className="mt-12"
           initial={{ opacity: 0, y: 20 }}
@@ -89,7 +89,7 @@ const StudentProjectsSection = () => {
             ))}
           </div>
         </motion.div>
-
+        */}
         {/* Featured Images — 4 in a row */}
         <motion.div
           className="mt-8"
