@@ -4,19 +4,19 @@ import { Users, GraduationCap, School, ShieldCheck } from "lucide-react";
 const stats = [
   {
     icon: Users,
-    value: "1600+",
+    value: "4645+",
     label: "Students Reached",
     desc: "Students introduced to hands-on robotics and electronics.",
   },
   {
     icon: GraduationCap,
-    value: "47+",
+    value: "61+",
     label: "Teachers Trained",
     desc: "Teachers equipped to continue STEM sessions in their schools.",
   },
   {
     icon: School,
-    value: "21+",
+    value: "29+",
     label: "Schools Engaged",
     desc: "Schools where Project ZŪL workshops and programs have been conducted.",
   },

@@ -132,8 +132,9 @@ export const defaultChapters: ChapterData[] = [
       images: [],
     },
     awards: [
-    //  { id: "ba1", title: "Best Chapter Initiative", year: "2024", organization: "Project Zūl National" },
-    //  { id: "ba2", title: "Youth STEM Outreach Award", year: "2023", organization: "West Bengal Govt." },
+      // { id: "ba1", title: "Best Chapter Initiative", year: "2024", organization: "Project Zūl National" },
+      // { id: "ba2", title: "Youth STEM Outreach Award", year: "2023", organization: "West Bengal Govt." },
+      { id: "ba3", title: "Letter of Appreciation for Project Zūl Balurghat Chapter", year: "2025", organization: "Sukanta Majumdar, Union Minister of State for Education and DoNER" },
     ],
     sections: {
       about: true,
@@ -193,8 +194,8 @@ export const defaultChapters: ChapterData[] = [
       images: [],
     },
     awards: [
-      { id: "ha1", title: "Best Green Chapter Award", year: "2024", organization: "Project Zūl National" },
-      { id: "ha2", title: "State STEM Initiative Award", year: "2023", organization: "Haryana Govt." },
+      //{ id: "ha1", title: "Best Green Chapter Award", year: "2024", organization: "Project Zūl National" },
+      //{ id: "ha2", title: "State STEM Initiative Award", year: "2023", organization: "Haryana Govt." },
     ],
     sections: {
       about: true,

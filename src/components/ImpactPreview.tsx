@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 import robotTall from "@/assets/robot-tall.png";
 
 const stats = [
-  { icon: School, value: "21+", label: "School Partners" },
-  { icon: GraduationCap, value: "47+", label: "Teachers Trained" },
-  { icon: Users, value: "1600+", label: "Inspired Students" },
+  { icon: School, value: "29+", label: "School Partners" },
+  { icon: GraduationCap, value: "61+", label: "Teachers Trained" },
+  { icon: Users, value: "4645+", label: "Inspired Students" },
 ];
 
 const ImpactPreview = () => (
