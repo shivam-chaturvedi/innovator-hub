@@ -1,27 +1,27 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { TrafficCone, Bot, Home, Thermometer, PlayCircle } from "lucide-react";
+import { TrafficCone, Radar, Gamepad2, Moon, PlayCircle } from "lucide-react";
 import VideoModal from "@/components/VideoModal";
 import ReelCard from "@/components/ReelCard";
 import { studentBuiltVideos } from "@/data/homeVideos";
 import type { ChapterVideo } from "@/data/chaptersData";
-import wb1 from "@/assets/wb-photo-1.jpg";
-import wb2 from "@/assets/wb-photo-2.jpg";
-import wb3 from "@/assets/wb-photo-3.jpg";
-import wb4 from "@/assets/wb-photo-4.jpg";
+import wb1 from "@/assets/student-built-1.jpg";
+import wb2 from "@/assets/student-built-2.jpg";
+import wb3 from "@/assets/student-built-3.jpg";
+import wb4 from "@/assets/student-built-4.jpg";
 
 const projects = [
-  { icon: TrafficCone, title: "Smart Traffic Light Systems" },
-  { icon: Bot, title: "Autonomous Line-Following Robots" },
-  { icon: Home, title: "Smart Home Automation Systems" },
-  { icon: Thermometer, title: "Environmental Monitoring Devices" },
+  { icon: TrafficCone, title: "Traffic Lights", description: "LEDs, sequencing and basic circuit logic." },
+  { icon: Radar, title: "Motion Sensor Projects", description: "How sensors detect movement and trigger a response." },
+  { icon: Gamepad2, title: "Buzzer Games", description: "Circuits, buzzers and simple game logic." },
+  { icon: Moon, title: "Automatic Night Light", description: "An LED switches on when it gets dark." },
 ];
 
 const studentImages = [
-  { src: wb1, alt: "Students working on robotics projects" },
-  { src: wb2, alt: "Teacher training session" },
-  { src: wb3, alt: "Students presenting their robots" },
-  { src: wb4, alt: "Community engagement event" },
+  { src: wb1, alt: "Students experimenting with an Arduino circuit in a computer lab" },
+  { src: wb2, alt: "Students building a circuit at a STEM exhibition booth" },
+  { src: wb3, alt: "Students testing a breadboard circuit with an Arduino board" },
+  { src: wb4, alt: "Students demonstrating a working LED circuit" },
 ];
 
 const StudentProjectsSection = () => {
@@ -56,7 +56,10 @@ const StudentProjectsSection = () => {
               <div className="w-12 h-12 bg-primary/10 flex items-center justify-center shrink-0">
                 <p.icon className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="font-heading font-semibold">{p.title}</h3>
+              <div>
+                <h3 className="font-heading font-semibold">{p.title}</h3>
+                <p className="text-muted-foreground text-sm mt-0.5">{p.description}</p>
+              </div>
             </motion.div>
           ))}
         </div>

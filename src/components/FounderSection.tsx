@@ -84,7 +84,7 @@ const FounderSection = () => (
       >
         <div className="flex-1">
           <h3 className="font-heading text-xs uppercase tracking-[0.3em] text-primary font-semibold mb-2">
-            Chapter Head
+            Project Lead & Chapter Head - West Bengal
           </h3>
           <h3 className="font-heading text-xl font-semibold mb-4">
             Kaavya Majumder
@@ -149,7 +149,7 @@ const FounderSection = () => (
           </p>
         </div>
         <img
-          src={vedImg}
+          src={virImg}
           alt="Ved Hariharan, Chapter Head Mumbai"
           className="w-60 h-60 object-cover"
           loading="lazy"
@@ -181,7 +181,7 @@ const FounderSection = () => (
           </p>
         </div>
         <img
-          src={virImg}
+          src={vedImg}
           alt="Vir Hariharan, Chapter Head Mumbai"
           className="w-60 h-60 object-cover"
           loading="lazy"

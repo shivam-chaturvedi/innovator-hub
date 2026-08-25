@@ -1,6 +1,7 @@
 import vedPortrait from "@/assets/ved-portrait.jpg";
 import virPortrait from "@/assets/vir-portrait.jpg";
 import aravPortrait from "@/assets/arav-portrait-real.png";
+import balurghatVideoPoster from "@/assets/balurghat-video-poster.jpg";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -67,8 +68,8 @@ export const defaultChapters: ChapterData[] = [
   // ── Balurghat ────────────────────────────────────────────────────────────────
   {
     id: "balurghat",
-    name: "Balurghat",
-    region: "West Bengal",
+    name: "West Bengal",
+    region: "",
     tagline: "Bringing robotics to every classroom in West Bengal",
     description: [
       "Following the success of Project Zūl in Jammu & Kashmir, the Balurghat chapter is expanding practical robotics learning to West Bengal. The Balurghat chapter brings hands-on robotics learning to local schools through Arduino-based workshops. Students learn electronics, coding, and problem-solving while building projects that address real challenges in their communities.",
@@ -94,6 +95,7 @@ export const defaultChapters: ChapterData[] = [
       title: "Chapter Story — Balurghat",
       description: "Meet the students, mentors, and teachers who made Balurghat their own lab.",
       src: "https://video.wixstatic.com/video/02b2cd_efe7c821083141f696802d27560260e2/1080p/mp4/file.mp4",
+      poster: balurghatVideoPoster,
       duration: "3:45",
     },
     videoRow1: {
@@ -150,7 +152,7 @@ export const defaultChapters: ChapterData[] = [
   {
     id: "haryana",
     name: "Haryana",
-    region: "North India",
+    region: "",
     tagline: "Green fields, greener futures — robotics meets sustainability",
     description: [
       "The Haryana chapter of Project Zūl brings cutting-edge robotics and sustainability education to schools across North India. Students explore how technology can solve real environmental challenges — from solar irrigation monitoring to air quality sensing.",
@@ -159,10 +161,10 @@ export const defaultChapters: ChapterData[] = [
     ],
     lead: null,
     stats: [
-      { label: "Schools", value: "4" },
-      { label: "Students", value: "350+" },
-      { label: "Teachers Trained", value: "18" },
-      { label: "Kits Donated", value: "20" },
+      { label: "Schools", value: "7" },
+      { label: "Students", value: "3060+" },
+      { label: "Teachers", value: "10" },
+      { label: "Kits Donated", value: "40" },
     ],
     featuredVideo: {
       id: "hv-featured",
@@ -304,7 +306,7 @@ export const defaultChapters: ChapterData[] = [
   {
     id: "mumbai",
     name: "Mumbai",
-    region: "Maharashtra",
+    region: "",
     tagline: "Empowering Mumbai's next generation to build, not just consume",
     description: [
       "The Mumbai chapter of Project Zūl is expanding the initiative's reach into one of India's most dynamic cities. Led by two student innovators with deep roots in STEM and leadership, the chapter focuses on bridging the gap between access and opportunity — ensuring that students across Mumbai can experience hands-on robotics education.",
@@ -336,7 +338,7 @@ export const defaultChapters: ChapterData[] = [
     ],
     stats: [
       { label: "Students", value: "200+" },
-      { label: "Schools", value: "3" },
+      { label: "NGOs", value: "2" },
       { label: "Workshops", value: "10+" },
       { label: "Chapter Leads", value: "2" },
     ],

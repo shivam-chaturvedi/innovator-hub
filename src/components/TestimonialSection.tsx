@@ -18,9 +18,9 @@ const testimonials = [
     school: "DPS",
   },
   {
-    text: "Learning experience was great as so much hand on activities were done ..really thankful",
-    author: "Miss Radihka Handa",
-    school: "JSS",
+    text: "Project Zul has trained 10 teachers online from scratch to advanced level. You are the perfect helping hand in our journey to bring technology to the villages. Because of your training and donated kits we have been able to open our village labs.",
+    author: "Ashish Vishwakarma",
+    school: "Project Manager, Indigo Knowledge Prism",
   },
   {
     text: "I am confident that we will collaborate on several exciting projects and that your time here — sharing your expertise and donating the kits — will be well worth the effort.",

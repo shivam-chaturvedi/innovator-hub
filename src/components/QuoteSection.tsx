@@ -33,7 +33,7 @@ const QuoteSection = () => (
         </blockquote>
         <div className="w-12 h-px bg-primary mx-auto mb-4" />
         <p className="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Kaavya Majumder</p>
-        <p className="text-xs text-muted-foreground mt-1">Chapter Head, West Bengal</p>
+        <p className="text-xs text-muted-foreground mt-1">Project Lead & Chapter Head - West Bengal</p>
       </motion.div>
     </div>
   </section>

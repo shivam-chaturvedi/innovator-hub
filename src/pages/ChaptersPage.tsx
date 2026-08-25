@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Settings } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import PageLayout from "@/components/PageLayout";
 import { getChapters } from "@/lib/chaptersStore";
@@ -65,9 +65,11 @@ const ChaptersPage = () => {
                           <h2 className="font-heading text-2xl md:text-3xl font-bold uppercase tracking-wide">
                             {chapter.name}
                           </h2>
-                          <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground font-semibold border border-border px-2 py-0.5">
-                            {chapter.region}
-                          </span>
+                          {chapter.region && (
+                            <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground font-semibold border border-border px-2 py-0.5">
+                              {chapter.region}
+                            </span>
+                          )}
                         </div>
                         <p className="text-muted-foreground text-sm">{chapter.tagline}</p>
 
@@ -102,19 +104,6 @@ const ChaptersPage = () => {
         </div>
       </section>
 
-      {/* ── Admin panel link ── */}
-      <section className="section-padding">
-        <div className="container mx-auto max-w-5xl">
-          <Link
-            to="/admin/chapters"
-            className="group inline-flex items-center gap-3 border border-border bg-card px-5 py-3 text-sm text-muted-foreground hover:border-primary/40 hover:text-foreground transition-colors duration-200"
-          >
-            <Settings className="h-4 w-4 shrink-0" />
-            <span>Chapter Admin Panel — manage content &amp; visibility</span>
-            <ArrowRight className="h-4 w-4 ml-auto transition-transform duration-200 group-hover:translate-x-1" />
-          </Link>
-        </div>
-      </section>
     </PageLayout>
   );
 };
