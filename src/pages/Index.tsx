@@ -7,6 +7,7 @@ import CoreComponentsSection from "@/components/CoreComponentsSection";
 import StudentProjectsSection from "@/components/StudentProjectsSection";
 import FounderSection from "@/components/FounderSection";
 import TestimonialSection from "@/components/TestimonialSection";
+import PartnersSection from "@/components/PartnersSection";
 import MediaLogosSection from "@/components/MediaLogosSection";
 import AwardsSection from "@/components/AwardsSection";
 import CTASection from "@/components/CTASection";
@@ -25,6 +26,7 @@ const Index = () => (
     <StudentProjectsSection />
     <FounderSection />
     <TestimonialSection />
+    <PartnersSection />
     <AwardsSection />
     <MediaLogosSection />
     <CTASection />
