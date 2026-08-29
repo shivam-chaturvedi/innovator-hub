@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import masoomLogo from "@/assets/logo-massom.webp";
+import gyanodayLogo from "@/assets/Logo-gyanoday.webp";
+import indigoLogo from "@/assets/logo-indigo.png";
 
 interface Partner {
   id: string;
@@ -12,19 +15,19 @@ const partners: Partner[] = [
   {
     id: "masoom",
     name: "Masoom Education",
-    logo: "/src/assets/logo-massom.webp",
+    logo: masoomLogo,
     website: "https://masoomeducation.org",
   },
   {
     id: "gyanoday",
     name: "Gyanoday",
-    logo: "/src/assets/Logo-gyanoday.webp",
+    logo: gyanodayLogo,
     website: "https://gyanoday.org.in",
   },
   {
     id: "indigo",
     name: "Indigo Knowledge Prism Foundation",
-    logo: "/src/assets/logo-indigo.png",
+    logo: indigoLogo,
     website: "https://theknowledgeprism.com",
   },
 ];
