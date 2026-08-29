@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { PlayCircle, Trophy, ArrowLeft, Settings } from "lucide-react";
+import { PlayCircle, Trophy, ArrowLeft } from "lucide-react";
 import { useState } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import PageLayout from "@/components/PageLayout";
@@ -112,13 +112,6 @@ const ChapterDetailPage = () => {
                   {chapter.name}
                 </h1>
               </div>
-              <Link
-                to={`/admin/chapters/${chapter.id}`}
-                className="mb-1 ml-auto flex items-center gap-1.5 border border-border px-3 py-1.5 text-xs text-muted-foreground hover:border-primary/40 hover:text-foreground transition-colors"
-              >
-                <Settings className="h-3.5 w-3.5" />
-                Edit chapter
-              </Link>
             </div>
             <p className="text-muted-foreground italic">{chapter.tagline}</p>
           </motion.div>
@@ -395,20 +388,13 @@ const ChapterDetailPage = () => {
 
       {/* ── Footer nav ── */}
       <section className="section-padding">
-        <div className="container mx-auto max-w-5xl flex items-center justify-between">
+        <div className="container mx-auto max-w-5xl">
           <Link
             to="/chapters"
             className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
             All Chapters
-          </Link>
-          <Link
-            to={`/admin/chapters/${chapter.id}`}
-            className="flex items-center gap-2 border border-border px-4 py-2 text-sm text-muted-foreground hover:border-primary/40 hover:text-foreground transition-colors"
-          >
-            <Settings className="h-4 w-4" />
-            Edit This Chapter
           </Link>
         </div>
       </section>

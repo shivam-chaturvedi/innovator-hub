@@ -20,6 +20,7 @@ import PartnersPage from "./pages/PartnersPage.tsx";
 import ProjectsPage from "./pages/ProjectsPage.tsx";
 import ScrollToTop from "@/components/ScrollToTop";
 import GoogleTranslate from "@/components/GoogleTranslate";
+import ProtectedAdminRoute from "@/components/ProtectedAdminRoute";
 
 const queryClient = new QueryClient();
 
@@ -44,8 +45,22 @@ const App = () => (
           <Route path="/chapters/:id" element={<ChapterDetailPage />} />
           <Route path="/community/partners" element={<PartnersPage />} />
           <Route path="/community/projects" element={<ProjectsPage />} />
-          <Route path="/admin/chapters" element={<ChaptersAdminPage />} />
-          <Route path="/admin/chapters/:id" element={<ChapterAdminEditPage />} />
+          <Route
+            path="/admin"
+            element={
+              <ProtectedAdminRoute>
+                <ChaptersAdminPage />
+              </ProtectedAdminRoute>
+            }
+          />
+          <Route
+            path="/admin/:id"
+            element={
+              <ProtectedAdminRoute>
+                <ChapterAdminEditPage />
+              </ProtectedAdminRoute>
+            }
+          />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

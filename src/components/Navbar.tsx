@@ -56,7 +56,7 @@ const Navbar = () => {
             </Link>
           ))}
 
-          {/* Community dropdown */}
+          {/* Community dropdown (Partners + Projects) — commented out, replaced below with a direct Partners link.
           <div className="relative">
             <button
               onClick={() => setCommunityOpen((v) => !v)}
@@ -88,6 +88,16 @@ const Navbar = () => {
               </div>
             )}
           </div>
+          */}
+          <Link
+            to="/community/partners"
+            reloadDocument
+            className={`text-xs uppercase tracking-widest px-3 py-2 font-semibold transition-colors ${
+              location.pathname === "/community/partners" ? "text-primary" : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            Partners
+          </Link>
         </div>
 
         <div className="ml-auto flex items-center gap-2 sm:gap-3 lg:ml-0">
@@ -133,6 +143,7 @@ const Navbar = () => {
               {t(`nav.${link.label.toLowerCase()}`)}
             </Link>
           ))}
+          {/* Community section (Partners + Projects) — commented out, replaced below with a direct Partners link.
           <p className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground/50 px-3 pt-2 pb-1 font-semibold">
             Community
           </p>
@@ -149,6 +160,17 @@ const Navbar = () => {
               {link.label}
             </Link>
           ))}
+          */}
+          <Link
+            to="/community/partners"
+            onClick={() => setOpen(false)}
+            reloadDocument
+            className={`block text-xs uppercase tracking-widest px-3 py-2 font-semibold transition-colors ${
+              location.pathname === "/community/partners" ? "text-primary" : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            Partners
+          </Link>
           <Link to="/contact" onClick={() => setOpen(false)} reloadDocument>
             <Button size="sm" className="w-full font-heading text-xs mt-2">
               {t("nav.getInvolved")}

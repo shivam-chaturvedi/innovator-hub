@@ -142,7 +142,7 @@ const ChapterAdminEditPage = () => {
   const [newAwOrg, setNewAwOrg] = useState("");
   const [newAwYear, setNewAwYear] = useState("2024");
 
-  if (!chapter || !id) return <Navigate to="/admin/chapters" replace />;
+  if (!chapter || !id) return <Navigate to="/admin" replace />;
 
   const reload = () => setChapter(getChapter(id));
 
@@ -269,7 +269,7 @@ const ChapterAdminEditPage = () => {
       <section className="section-padding pb-6 border-b border-border">
         <div className="container mx-auto max-w-5xl space-y-5">
           <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] font-semibold text-muted-foreground">
-            <Link to="/admin/chapters" className="hover:text-primary transition-colors flex items-center gap-1.5">
+            <Link to="/admin" className="hover:text-primary transition-colors flex items-center gap-1.5">
               <ArrowLeft className="h-3.5 w-3.5" />
               Admin Panel
             </Link>

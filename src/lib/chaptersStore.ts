@@ -36,9 +36,11 @@ function load(): StoredState {
 
 function save(state: StoredState): void {
   try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-  } catch {
-    // silently fail if storage is unavailable
+    const json = JSON.stringify(state);
+    localStorage.setItem(STORAGE_KEY, json);
+    console.log("[chaptersStore] Saved to localStorage:", { key: STORAGE_KEY, size: json.length });
+  } catch (error) {
+    console.error("[chaptersStore] Failed to save to localStorage:", error);
   }
 }
 

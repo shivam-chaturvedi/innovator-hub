@@ -64,7 +64,7 @@ const ChaptersAdminPage = () => {
                 transition={{ delay: i * 0.08 }}
               >
                 <Link
-                  to={`/admin/chapters/${chapter.id}`}
+                  to={`/admin/${chapter.id}`}
                   className="group flex items-center gap-5 border border-border bg-card p-5 hover:border-primary/40 transition-colors"
                 >
                   {/* Name + region */}
