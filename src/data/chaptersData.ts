@@ -155,9 +155,10 @@ export const defaultChapters: ChapterData[] = [
     region: "",
     tagline: "Green fields, greener futures — robotics meets sustainability",
     description: [
-      "The Haryana chapter of Project Zūl brings cutting-edge robotics and sustainability education to schools across North India. Students explore how technology can solve real environmental challenges — from solar irrigation monitoring to air quality sensing.",
-      "Our hands-on workshops train students to design, build, and deploy Arduino-based systems that address local problems. Every kit donated stays with the school, ensuring the program continues independently.",
-      "The chapter is built on community partnerships with local schools, NGOs, and government bodies committed to STEM education for all.",
+      "Taking robotics from classrooms to village labs. In Haryana, Project Zūl has worked in partnership with Indigo Knowledge Prism Foundation (IKP) to bring hands-on STEM learning to students across different learning environments.",
+      "The chapter began with online training for teachers, introducing them to Project Zūl's robotics curriculum and preparing them to conduct activities with their own students. These teachers then took the learning into the classroom across 6 schools, guiding students through robotics and electronics before the Project Zūl team visited the school for an interactive hands-on session.",
+      "The journey extended beyond the traditional classroom to two Village Research Labs established by IKP in rural Haryana. Here, Project Zūl introduced students to the fundamentals of circuits, electronics and robotics through practical activities designed to encourage experimentation, problem-solving and curiosity.",
+      "From training teachers remotely to building circuits with students in village labs, the Haryana chapter reflects Project Zūl's larger goal: making hands-on STEM learning accessible wherever students learn.",
     ],
     lead: null,
     stats: [
