@@ -155,7 +155,8 @@ export const defaultChapters: ChapterData[] = [
     region: "",
     tagline: "Green fields, greener futures — robotics meets sustainability",
     description: [
-      "Taking robotics from classrooms to village labs. In Haryana, Project Zūl has worked in partnership with Indigo Knowledge Prism Foundation (IKP) to bring hands-on STEM learning to students across different learning environments.",
+      "<b>Taking robotics from classrooms to village labs</b>",
+      " In Haryana, Project Zūl has worked in partnership with Indigo Knowledge Prism Foundation (IKP) to bring hands-on STEM learning to students across different learning environments.",
       "The chapter began with online training for teachers, introducing them to Project Zūl's robotics curriculum and preparing them to conduct activities with their own students. These teachers then took the learning into the classroom across 6 schools, guiding students through robotics and electronics before the Project Zūl team visited the school for an interactive hands-on session.",
       "The journey extended beyond the traditional classroom to two Village Research Labs established by IKP in rural Haryana. Here, Project Zūl introduced students to the fundamentals of circuits, electronics and robotics through practical activities designed to encourage experimentation, problem-solving and curiosity.",
       "From training teachers remotely to building circuits with students in village labs, the Haryana chapter reflects Project Zūl's larger goal: making hands-on STEM learning accessible wherever students learn.",

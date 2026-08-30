@@ -146,7 +146,7 @@ const ChapterDetailPage = () => {
               <div className="space-y-8 max-w-3xl">
                 <div className="space-y-4 text-muted-foreground">
                   {chapter.description.map((para, i) => (
-                    <p key={i}>{para}</p>
+                    <p key={i} dangerouslySetInnerHTML={{ __html: para }}></p>
                   ))}
                 </div>
 
