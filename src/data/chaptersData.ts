@@ -85,6 +85,7 @@ export const defaultChapters: ChapterData[] = [
         "Her academic interests focus on modelling complex systems and networks — understanding how ideas, behaviors, and environmental changes spread through interconnected systems.",
         "Through Project Zūl, Kaavya hopes to inspire students to see technology not just as something they study, but as a tool they can use to solve problems in their own communities.",
       ],
+      image: kaavyaPortrait,
     },
     stats: [
       { label: "Students", value: "600+" },
