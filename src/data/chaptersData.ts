@@ -80,6 +80,7 @@ export const defaultChapters: ChapterData[] = [
     ],
     lead: {
       name: "Kaavya Majumder",
+      title: "President & Project Lead",
       bio: [
         "Kaavya is a student from Mumbai interested in how technology, sustainability, and systems thinking intersect to solve real-world problems. Her work ranges from building platforms for sustainable lifestyle and community like Climate Crusaders, to developing a device designed to monitor groundwater levels.",
         "Her academic interests focus on modelling complex systems and networks — understanding how ideas, behaviors, and environmental changes spread through interconnected systems.",
@@ -167,7 +168,7 @@ export const defaultChapters: ChapterData[] = [
     ],
     lead: {
       name: "Kaavya Majumder",
-      title: "Project Lead & Chapter Head",
+      title: "President & Project Lead",
       bio: [
         "Kaavya leads Project Zūl's programmes in Haryana, playing a key role in building its partnership with IKP and planning its activities, engagements and expansion into schools and village learning spaces. She has travelled to remote parts of Haryana to lead sessions, while working closely with teachers and students to gather feedback and use those insights to continually refine the curriculum and future sessions.",
       ],
@@ -348,7 +349,7 @@ export const defaultChapters: ChapterData[] = [
     ],
     lead: {
       name: "Kaavya Majumder",
-      title: "Project Lead",
+      title: "President & Project Lead",
       bio: [
         "Kaavya leads Project Zūl's programmes in Mumbai, planning its outreach and partnerships while working with chapter members, teachers and NGOs to bring hands-on robotics learning to students across different communities. She has led sessions in Dharavi and the Mumbai suburbs, helping introduce the programme, understand community needs and establish partnerships with Masoom and Gyanoday, two NGOs now working with Project Zūl.",
       ],
